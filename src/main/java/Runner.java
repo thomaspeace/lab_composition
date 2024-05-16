@@ -14,6 +14,16 @@ public class Runner {
 
         System.out.println(jazz.getHorsePower());
 
+
+
+        IEngine bigPropellerEngine = new PropellerEngine(500, 200);
+
+        CargoShip cargoShip = new CargoShip(200_000, 100, "V-shape", 32, bigPropellerEngine);
+
+        System.out.println(cargoShip.getHullType());
+        System.out.println(cargoShip.getEngine().getHorsePower());
+
+
     }
 
 }
