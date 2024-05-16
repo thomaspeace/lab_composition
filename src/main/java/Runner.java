@@ -24,6 +24,12 @@ public class Runner {
         System.out.println(cargoShip.getEngine().getHorsePower());
 
 
+        IEngine smallPropellerEngine = new PropellerEngine(100, 40);
+        Speedboat speedboat = new Speedboat(1000, 150, false, "U-shape", smallPropellerEngine);
+        System.out.println(speedboat.getHullType());
+        System.out.println(speedboat.getEngine().getHorsePower());
+
+
     }
 
 }
